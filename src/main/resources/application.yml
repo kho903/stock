@@ -8,6 +8,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/stock_example
     username: ENC(w3Afa/9nocxoZNtwisGjgw==)
     password: ENC(s8A6eo65vcFS1q6CK6Gjzhkz8sI6roqY)
+    hikari:
+      maximum-pool-size: 40
 
 logging:
   level:

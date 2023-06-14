@@ -1,6 +1,7 @@
 package com.jikim.stock.service;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.jikim.stock.domain.Stock;
@@ -16,6 +17,7 @@ public class StockService {
 	}
 
 	// @Transactional
+	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	public synchronized void decrease(Long id, Long quantity) {
 		/**
 		 * synchronized는 자바의 프로세스가 한 개 일때에만 보장.
