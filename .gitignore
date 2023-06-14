@@ -1,5 +1,6 @@
 /src/main/java/com/jikim/stock/config/JasyptConfig.java
 /src/test/java/com/jikim/stock/config/JasyptConfig.java
+/src/test/resources/application.yml
 
 HELP.md
 .gradle
